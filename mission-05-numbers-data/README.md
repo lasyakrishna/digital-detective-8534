@@ -1,5 +1,14 @@
 # Mission 5 — Numbers and data
 
+## 1. Task / objective
+Convert numbers manually between decimal, binary, and hexadecimal, verify results in Python, build `number_converter.py`, and explain how text is encoded using ASCII and Unicode.
+
+## 2. Work completed
+* Completed 7 manual number-system conversions with step-by-step division and place-value working.
+* Verified all manual answers in the `python3` interactive shell using `bin()`, `hex()`, and `int(str, base)`.
+* Built and tested `number_converter.py` with three positive decimal numbers (`10`, `25`, `255`).
+* Documented ASCII decimal codes (`A` = `65`, `a` = `97`) and why character encoding standards are required.
+
 ## Task 5.1 — Convert numbers by hand
 
 | Question | Your working and answer |
@@ -69,6 +78,29 @@ print("Hexadecimal:", hex_val)
 
 ---
 
-## Reflection & Challenges Faced
-* **Summary:** Practised manual base-2, base-10, and base-16 conversions, verified results in Python's interactive shell, built `number_converter.py`, and reviewed ASCII vs. UTF-8 text encoding.
-* **Challenges:** Remembering that `input()` returns text as a string in Python, so wrapping it with `int()` was necessary before passing the number into `bin()` and `hex()`.
+## 3. Commands / tools used
+* `python3` : Launched the interactive Python shell to verify conversions with `bin()`, `hex()`, and `int()`.
+* `python3 number_converter.py` : Ran the decimal-to-binary and hexadecimal converter program.
+* `git add`, `git commit`, `git push` : Committed `number_converter.py` and `README.md`.
+
+## 4. My understanding
+* Computers store all data—numbers, letters, and symbols—as binary bits (`0` and `1`).
+* Hexadecimal provides a shorter, human-friendly way to represent groups of 4 binary bits.
+* Encoding standards like ASCII and UTF-8 ensure text saved on one computer renders identically on any other computer.
+
+## 5. Difficulties faced
+* Encountered a `TypeError` when passing the direct return value of `input()` into `bin()` because `input()` returns a string.
+
+## 6. How I resolved them
+* Converted the user input to an integer using `int(input(...))` before calling `bin()` and `hex()`.
+
+## 7. Evidence / files
+* `mission-05-numbers-data/number_converter.py`
+* `mission-05-numbers-data/README.md`
+
+## 8. Commit details
+* Commit message: `"Build number converter and document data representation"`
+* Commit repository: `digital-detective-8534`
+* Push status: Committed and pushed to GitHub (`main` branch).
+
+ 
