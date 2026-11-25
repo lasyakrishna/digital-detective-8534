@@ -1,5 +1,13 @@
 # Mission 4 — How programs run
 
+## 1. Task / objective
+Run a simple one-line Python program (`hello.py`) from Terminal and compare how compilers and interpreters translate or execute programs.
+
+## 2. Work completed
+* Created `hello.py` inside `mission-04-programs` to display `"Hello from Python"`.
+* Executed `hello.py` using Python 3 in Terminal and confirmed `"Hello from Python"` printed on screen.
+* Completed the comparison table and written explanation between a compiler and an interpreter.
+
 ## Task 4.1 — Create and run a Python program
 
 ### Code in `hello.py`
@@ -33,7 +41,27 @@ As shown in the comparison table, the main difference between a compiler and an 
 
 ---
 
-## Reflection & Challenges Faced
-* **Command / Tool Used:** Used `python3 hello.py` in Terminal to execute the Python script.
-* **What I Understood:** Learned how Python acts as an interpreter to execute code directly at runtime, and how that differs from compiled languages that build an executable ahead of time.
-* **Challenges Faced:** Ensuring I typed `python3` (rather than `python`) so the terminal used the right Python 3 interpreter, and matching the exact capitalization in `"Hello from Python"`.
+ 
+## 3. Commands / tools used
+* `python3 hello.py` : Runs the Python 3 interpreter to execute `hello.py`.
+* `VS Code` : Used to write `hello.py` and `README.md`.
+* `git add`, `git commit`, `git push` : Committed `hello.py` and `README.md` to GitHub.
+
+## 4. My understanding
+* Computers cannot execute human-readable source code directly; it must be translated into machine instructions first.
+* Compilers translate everything upfront for maximum execution speed, while interpreters translate line by line for flexibility and quick debugging.
+
+## 5. Difficulties faced
+* No major difficulties.
+
+## 6. How I resolved them
+* Not applicable.
+
+## 7. Evidence / files
+* `mission-04-programs/hello.py`
+* `mission-04-programs/README.md`
+
+## 8. Commit details
+* Commit message: `"Compare compilers and interpreters"`
+* Commit repository: `digital-detective-8534`
+* Push status: Committed and pushed to GitHub (`main` branch).
