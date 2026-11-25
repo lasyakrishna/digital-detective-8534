@@ -1,68 +1,50 @@
-# Mission 6 — Git and GitHub
+# Mission 7 — How computers communicate
 
-## Task 6.1 — Understand the basic Git workflow
+## Task 7.1 — Explain network concepts
 
-### Commands Used
-```bash
-git status
-git add mission-06-git-github/README.md
-git commit -m "Document basic Git workflow in Mission 6"
-git log -n 5
-```
-
-### Git Operations Table
-
-| Git operation | What it does in your own words |
-| :--- | :--- |
-| **Check repository status** (`git status`) | Shows which files have been modified, which are staged for the next commit, and which are untracked. |
-| **Stage selected changes** (`git add <file>`) | Places specific modified or new files into the staging area so they are ready to be saved in the next snapshot. |
-| **Create a commit** (`git commit -m "message"`) | Permanently saves a snapshot of all staged changes into the local repository history along with a descriptive message. |
-| **View commit history** (`git log`) | Displays a chronological list of past commits, including their commit IDs, authors, dates, and messages. |
-
-### Difference Between Staging and Committing
-**Staging (`git add`)** prepares and selects specific file changes to be included in an upcoming snapshot without recording them yet—letting you review or group related edits together. **Committing (`git commit`)** takes everything currently in the staging area and permanently records it as a saved version in the repository's history.
-
----
-
-## Task 6.2 — Create and use a branch
-
-### Commands Used
-```bash
-git checkout -b update-about
-git status
-git add README.md
-git commit -m "Add My Learning section to root README"
-git push -u origin update-about
-```
-
-* Created the `update-about` branch, added the **"My Learning"** section to the root `README.md`, committed the update, and published the new branch to GitHub.
-
----
-
-## Task 6.3 — Create a Pull Request
-
-* **Pull Request Activity:** Opened a Pull Request on GitHub comparing `update-about` -> `main` with a summary of the `README.md` learning update. *(Status: Open / Merged as instructed — visible on GitHub).*
-* **What a branch and a Pull Request are, and why they are useful:**
-  A **branch** is an independent line of development that lets you work on new features or edits safely without breaking the main working codebase. A **Pull Request (PR)** is a formal proposal on GitHub asking to merge changes from one branch into another. Together, they are essential for teamwork because multiple people can work on different tasks simultaneously, review each other's code, discuss changes, and test everything before merging into `main`.
-
----
-
-## Task 6.4 — Build your Git command glossary
-
-| Git Operation | Command | One-Line Explanation in My Own Words |
+| Concept | Explain it in your own words | Example |
 | :--- | :--- | :--- |
-| **Initialise a repository** | `git init` | Turns a regular local folder into a brand-new Git repository so Git can track its history. |
-| **Check status** | `git status` | Displays the current branch and lists any modified, staged, or untracked files. |
-| **Stage changes** | `git add <file>` | Adds chosen file changes to the staging area in preparation for the next commit. |
-| **Commit changes** | `git commit -m "msg"` | Saves a permanent snapshot of staged changes to the local Git history with a note. |
-| **View history** | `git log` | Shows the log of previous commits made in the repository. |
-| **Create or list branches** | `git branch` | Lists all existing local branches, or creates a new branch when followed by a branch name. |
-| **Switch branches** | `git checkout <branch>` / `git switch <branch>` | Moves your working directory from the current branch to another specified branch. |
-| **Publish changes** | `git push` | Uploads your local branch commits to a remote repository like GitHub. |
-| **Retrieve remote changes** | `git pull` | Downloads and merges the latest changes from the remote GitHub repository into your local branch. |
+| **LAN** | A Local Area Network connects devices within a small, single location like a home, classroom, or office. | All laptops and phones connected to my home Wi-Fi router. |
+| **MAN** | A Metropolitan Area Network spans across a whole city or a large university/corporate campus. | A city-wide public Wi-Fi network or interconnected buildings across a large university campus. |
+| **WAN** | A Wide Area Network connects multiple smaller networks across huge geographic distances, countries, or continents. | The global Internet connecting computers in India to servers around the world. |
+| **DNS** | The Domain Name System acts like the internet's phonebook, translating human-readable website names into numeric IP addresses. | Translating `example.com` into its numeric IP address (`93.184.216.34`) so a browser can locate the server. |
+| **Router** | A networking device that connects different networks together and directs data packets along the best path to their destination. | A home Wi-Fi router forwarding web requests from my laptop to my Internet Service Provider (ISP). |
+| **Protocol** | A shared set of rules and formats that computers follow so they can reliably send, receive, and understand data. | `HTTPS` for secure web browsing or `TCP/IP` for reliable internet data transmission. |
+| **Packet switching** | Breaking large messages or files into small chunks (packets) that travel independently across the network and get reassembled at the destination. | Streaming a video where small data packets take different routes across the internet and reassemble smoothly on screen. |
+| **Client-server** | A communication model where a user's device (the client) requests data or a service, and a central computer (the server) processes and sends back the response. | My web browser (client) requesting a webpage from GitHub's web server (server). |
+
+---
+
+## Task 7.2 — Observe network information
+
+### Commands Used
+```bash
+ping -c 4 example.com
+nslookup example.com
+```
+*(Note: Personal IP addresses and local DNS server details have been omitted/redacted for privacy.)*
+
+### Observations & Explanations
+* **What a connectivity test (`ping`) helps you check:**
+  A connectivity test checks whether my computer can successfully reach a target website or server over the network, how long it takes for data packets to make a round trip (latency in milliseconds), and whether any packets were lost along the way.
+* **What information a DNS lookup (`nslookup`) displays:**
+  A DNS lookup displays the domain name queried (`example.com`) and the public IPv4/IPv6 network address(es) associated with that domain so devices know where to send traffic.
+* **Role of DNS when you enter a website name in a browser:**
+  Because computers communicate using numeric IP addresses rather than words, DNS automatically translates the domain name typed into the browser into the destination server's exact IP address before the connection is made.
+
+---
+
+## Task 7.3 — What happens when you open a website?
+
+1. **User enters the URL:** I type a website address (such as `https://example.com`) into my web browser, which acts as the **client**.
+2. **DNS lookup:** The browser checks its cache and queries a **DNS** server to translate the human-readable domain name into the destination server's numeric IP address.
+3. **Request travels through the network:** My computer packages the request into small data packets using standard networking **protocols** (such as TCP/IP and HTTPS) and sends them through my local **router** and ISP across the internet.
+4. **Connection and HTTP/HTTPS request:** Once the packets reach the destination web **server**, the client and server establish a connection and the client sends a formal HTTP/HTTPS request asking for the webpage files.
+5. **Server processes the request:** The **server** locates or generates the requested HTML, CSS, and image files and breaks them into data packets to send back to my IP address.
+6. **Browser renders the response:** The packets travel back through the **router** to my **client** device, where the browser reassembles them and displays the complete webpage on my screen.
 
 ---
 
 ## Reflection & Challenges Faced
-* **Summary:** Practised the full Git and GitHub collaboration workflow—staging and committing locally, creating a feature branch (`update-about`), pushing to GitHub, and opening a Pull Request.
-* **Challenges:** Remembering to switch back to the `main` branch (`git checkout main`) after pushing `update-about` so future mission work stays on the right branch.
+* **Summary:** Reviewed core networking concepts (LAN/MAN/WAN, DNS, routers, protocols, packet switching, client-server), tested live network connectivity and DNS resolution in Terminal, and traced the step-by-step lifecycle of loading a webpage.
+* **Challenges:** Making sure to redact local network details and IP addresses from terminal output while clearly explaining how DNS, routers, and protocols work together.

@@ -1,4 +1,4 @@
-# Mission 6 — Git and GitHub
+ # Mission 6 — Git and GitHub
 
 ## Task 6.1 — Understand the basic Git workflow
 
@@ -41,7 +41,7 @@ git push -u origin update-about
 
 ## Task 6.3 — Create a Pull Request
 
-* **Pull Request Activity:** Opened a Pull Request on GitHub comparing `update-about` -> `main` with a summary of the `README.md` learning update. *(Status: Merged into main. I merged it after reviewing the changed README file.).*
+* **Pull Request Activity:** Opened a Pull Request on GitHub comparing `update-about` -> `main` with a summary of the `README.md` learning update. *(Status: Open / Merged as instructed — visible on GitHub).*
 * **What a branch and a Pull Request are, and why they are useful:**
   A **branch** is an independent line of development that lets you work on new features or edits safely without breaking the main working codebase. A **Pull Request (PR)** is a formal proposal on GitHub asking to merge changes from one branch into another. Together, they are essential for teamwork because multiple people can work on different tasks simultaneously, review each other's code, discuss changes, and test everything before merging into `main`.
 
@@ -66,3 +66,4 @@ git push -u origin update-about
 ## Reflection & Challenges Faced
 * **Summary:** Practised the full Git and GitHub collaboration workflow—staging and committing locally, creating a feature branch (`update-about`), pushing to GitHub, and opening a Pull Request.
 * **Challenges:** Remembering to switch back to the `main` branch (`git checkout main`) after pushing `update-about` so future mission work stays on the right branch.
+
