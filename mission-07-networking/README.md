@@ -1,5 +1,13 @@
 # Mission 7 — How computers communicate
 
+## 1. Task / objective
+Explain core computer networking concepts, observe connectivity and DNS lookups safely in Terminal, and trace what happens step by step when opening a website in a browser.
+
+## 2. Work completed
+* Explained 8 core networking concepts (`LAN`, `MAN`, `WAN`, `DNS`, `Router`, `Protocol`, `Packet switching`, `Client-server`) with real-world examples.
+* Tested connectivity and DNS resolution against a public domain (`example.com`) without exposing local network or IP details.
+* Traced the 6-step client-server lifecycle of loading a webpage in a browser.
+
 ## Task 7.1 — Explain network concepts
 
 | Concept | Explain it in your own words | Example |
@@ -45,6 +53,27 @@ nslookup example.com
 
 ---
 
-## Reflection & Challenges Faced
-* **Summary:** Reviewed core networking concepts (LAN/MAN/WAN, DNS, routers, protocols, packet switching, client-server), tested live network connectivity and DNS resolution in Terminal, and traced the step-by-step lifecycle of loading a webpage.
-* **Challenges:** Making sure to redact local network details and IP addresses from terminal output while clearly explaining how DNS, routers, and protocols work together.
+## 3. Commands / tools used
+* `ping -c 4 example.com` : Checked reachability and round-trip latency to a public domain.
+* `nslookup example.com` : Queried DNS to observe domain-to-IP address resolution.
+* `git add`, `git commit`, `git push` : Committed and pushed Mission 7 documentation.
+
+## 4. My understanding
+* Computer communication relies on standardized protocols, routers, and packet switching to move data reliably across local and global networks.
+* DNS acts as the internet's directory, bridging human-friendly website names with machine-routable IP addresses.
+
+## 5. Difficulties faced
+* Making sure local DNS server addresses and private IP information were omitted from the documented output.
+
+## 6. How I resolved them
+* Summarized the behavior using only the public domain query (`example.com`) and kept personal network identifiers redacted.
+
+## 7. Evidence / files
+* `mission-07-networking/README.md`
+
+## 8. Commit details
+* Commit message: `"Explain networking concepts and website communication"`
+* Commit repository: `digital-detective-8534`
+* Push status: Committed and pushed to GitHub (`main` branch).
+
+ 
