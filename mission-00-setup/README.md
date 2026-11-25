@@ -1,4 +1,51 @@
 # Mission 0 — Create your GitHub workspace
+# Mission 0 — Create your GitHub workspace
+
+## Task Completed & Repository Name
+* **Task:** Created the local project workspace, set up the complete mission folder and file structure, initialized Git, and published the repository to GitHub.
+* **Repository Name:** `digital-detective-8534`
+
+---
+
+## Tools Checked & Versions
+Verified the required tools in Terminal before starting the missions:
+* **Python:** `Python 3.14.7` *(checked using `python3 --version`)*
+* **Git:** `git version 2.50.1` *(checked using `git --version`)*
+
+---
+
+## Folders and Files Created
+Created the following project structure inside the root repository folder:
+
+```text
+Digital-detective-8534/
+├── README.md
+├── mission-00-setup/README.md
+├── mission-01-computer-basics/README.md
+├── mission-02-terminal/README.md
+├── mission-03-operating-system/README.md
+├── mission-04-programs/
+│   ├── README.md
+├── mission-05-numbers-data/
+│   ├── README.md
+│   └── number_converter.py
+├── mission-06-git-github/README.md
+├── mission-07-networking/README.md
+├── mission-08-final-report/README.md
+└── evidence/
+```
+
+---
+
+## What a Repository Is & Why This Folder Structure Is Organised by Mission
+* **What a repository is:** A repository (or "repo") is a central project folder tracked by Git that stores all project files along with a complete history of every change made over time.
+* **Why the folder structure is organised by mission:** Separating the workspace into dedicated mission folders keeps each topic isolated, prevents files from getting mixed up, makes progress easy to track commit-by-commit, and allows visitors or evaluators to find any specific assignment section immediately.
+
+---
+
+## Setup Difficulty & Resolution
+* **Difficulty Faced:** Making sure the local folder name and GitHub repository name matched the exact naming rule (`digital-detective-<last-4-USN-digits>`) and avoiding creating a duplicate `README.md` on GitHub when connecting the local repository.
+* **How It Was Resolved:** Created the repository empty on GitHub without initializing a default README, linked it to the local folder using `git remote add origin`, and pushed the local structure cleanly.
 
 | README section | Details |
 |---|---|
