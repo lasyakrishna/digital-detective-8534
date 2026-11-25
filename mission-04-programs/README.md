@@ -52,10 +52,13 @@ As shown in the comparison table, the main difference between a compiler and an 
 * Compilers translate everything upfront for maximum execution speed, while interpreters translate line by line for flexibility and quick debugging.
 
 ## 5. Difficulties faced
-* No major difficulties.
+* `Initially, I needed to understand how to create and execute a Python file using Terminal.`
+* `Understanding the difference between a compiler and an interpreter was a little confusing.`  
 
 ## 6. How I resolved them
-* Not applicable.
+* `Practised creating and running a Python file using Terminal.`
+* ` Compared the working methods of compilers and interpreters.`
+
 
 ## 7. Evidence / files
 * `mission-04-programs/hello.py`
