@@ -1,5 +1,13 @@
  # Mission 6 — Git and GitHub
 
+## 1. Task / objective
+Practise the core Git workflow, create a feature branch (`update-about`), add a learning section to the root README, open a Pull Request on GitHub, and build a Git command glossary.
+
+## 2. Work completed
+* Practised `git status`, `git add`, `git commit`, and `git log` and documented the difference between staging and committing.
+* Created branch `update-about`, added the **"My Learning"** section to the root `README.md`, pushed the branch to GitHub, and opened a Pull Request (`update-about` -> `main`).
+* Built a 9-command Git reference glossary with one-line explanations in my own words.
+
 ## Task 6.1 — Understand the basic Git workflow
 
 ### Commands Used
@@ -63,7 +71,30 @@ git push -u origin update-about
 
 ---
 
-## Reflection & Challenges Faced
-* **Summary:** Practised the full Git and GitHub collaboration workflow—staging and committing locally, creating a feature branch (`update-about`), pushing to GitHub, and opening a Pull Request.
-* **Challenges:** Remembering to switch back to the `main` branch (`git checkout main`) after pushing `update-about` so future mission work stays on the right branch.
+## 3. Commands / tools used
+* `git status`, `git add`, `git commit`, `git log` : Managed local file tracking and commit history.
+* `git checkout -b update-about` : Created and switched to the `update-about` feature branch.
+* `git push -u origin update-about` : Published the new branch to GitHub.
+* `git checkout main` & `git pull` : Returned to `main` and synced changes.
+* `GitHub Web UI` : Created the Pull Request comparing `update-about` into `main`.
 
+## 4. My understanding
+* Git tracks every change locally like a version history timeline, while GitHub hosts the remote repository for backup and teamwork.
+* Feature branches and Pull Requests keep the `main` branch stable while allowing changes to be reviewed cleanly before merging.
+
+## 5. Difficulties faced
+* Remembering to switch back from `update-about` to `main` before continuing work on later missions.
+
+## 6. How I resolved them
+* Checked the active branch with `git branch` and switched back using `git checkout main`.
+
+## 7. Evidence / files
+* `mission-06-git-github/README.md`
+* Branch `update-about` and Pull Request visible on GitHub (`digital-detective-8534`).
+
+## 8. Commit details
+* Commit message: `"Complete Git and GitHub collaboration mission"`
+* Commit repository: `digital-detective-8534`
+* Push status: Committed and pushed to GitHub (`main` branch).
+
+ 
