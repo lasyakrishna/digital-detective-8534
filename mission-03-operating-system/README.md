@@ -1,5 +1,16 @@
 # Mission 3 — Understand the operating system
 
+# Mission 3: Understand the operating system
+
+## 1. Task / objective
+Inspect operating system details, active user identity, storage usage, running processes and PIDs, file paths, permissions, and core OS responsibilities in a privacy-safe manner.
+
+## 2. Work completed
+* Explored OS kernel details, active account identity, disk usage, and running process snapshots with sensitive identifiers redacted.
+* Identified what processes and PIDs are, along with examples of user and background processes.
+* Compared absolute vs. relative file paths and inspected read/write/execute permission flags (`-rw-r--r--`).
+* Documented the six core responsibilities of an operating system with real examples.
+
 ## Task 3.1 — Explore your operating system
 
 ### Commands Used
@@ -78,6 +89,31 @@ ls -l notes.txt
 
 ---
 
-## Reflection & Challenges Faced
-* **Summary:** Explored operating system details, active process IDs, absolute vs. relative file paths, and file permission flags while keeping personal device identifiers `[redacted]`.
-* **Challenges:** Remembering to replace personal usernames and file paths with `[redacted]` before committing, and breaking down the 10-character permission string (`-rw-r--r--`) into owner, group, and public permissions.
+## 3. Commands / tools used
+* `uname -a` : Displays operating system kernel and architecture information.
+* `whoami` : Prints the currently logged-in account username.
+* `df -h` : Shows disk usage and available space in human-readable units.
+* `ps aux | head -n 15` : Lists running processes along with their PIDs and resource usage.
+* `pwd` & `cd` : Verified absolute and relative directory paths.
+* `ls -l` : Inspected file permission strings (`-rw-r--r--`).
+* `git add`, `git commit`, `git push` : Committed and pushed Mission 3 documentation.
+
+## 4. My understanding
+* The operating system manages hardware resources (CPU, RAM, disk, devices) so applications can run safely without interfering with one another.
+* Every running app or background service is tracked as a separate process with its own unique PID.
+* File paths and `rwx` permission bits protect system integrity and control who can view, edit, or execute files.
+
+## 5. Difficulties faced
+* Reading the 10-character permission string (`-rw-r--r--`) and making sure no personal usernames or system paths were exposed.
+
+## 6. How I resolved them
+* Split the permission string into file type (`-`), owner (`rw-`), group (`r--`), and others (`r--`), and replaced personal details with `[redacted]`.
+
+## 7. Evidence / files
+* `mission-03-operating-system/README.md`
+
+## 8. Commit details
+* Commit message: `"Document operating system and file management"`
+* Commit repository: `digital-detective-8534`
+* Push status: Committed and pushed to GitHub (`main` branch).
+ 
