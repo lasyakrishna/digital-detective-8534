@@ -44,7 +44,7 @@
 * Root `README.md`
 * `mission-00-setup/README.md`
 * All nine mission folders (`mission-00-setup` to `mission-08-final-report`)
-* number_converter.py`
+* `hello.py and number_converter.py`
 * `evidence/.gitkeep`
 
 ## 8. Commit details
