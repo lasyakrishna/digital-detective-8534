@@ -1,4 +1,4 @@
-# Mission 3 — Understand the operating system
+ 
 
 # Mission 3: Understand the operating system
 
