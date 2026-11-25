@@ -41,7 +41,7 @@ git push -u origin update-about
 
 ## Task 6.3 — Create a Pull Request
 
-* **Pull Request Activity:** Opened a Pull Request on GitHub comparing `update-about` -> `main` with a summary of the `README.md` learning update. *(Status: Open / Merged as instructed — visible on GitHub).*
+* **Pull Request Activity:** Opened a Pull Request on GitHub comparing `update-about` -> `main` with a summary of the `README.md` learning update. *(Status: Merged into main. I merged it after reviewing the changed README file.).*
 * **What a branch and a Pull Request are, and why they are useful:**
   A **branch** is an independent line of development that lets you work on new features or edits safely without breaking the main working codebase. A **Pull Request (PR)** is a formal proposal on GitHub asking to merge changes from one branch into another. Together, they are essential for teamwork because multiple people can work on different tasks simultaneously, review each other's code, discuss changes, and test everything before merging into `main`.
 
